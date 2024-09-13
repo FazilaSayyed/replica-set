@@ -24,4 +24,4 @@ spec:
                   protocol: TCP      
     selector: 
          matchExpressions: 
-            - {key: app, operator: In, values: [todoappreplica, mobappreplica]}
+            - {key: app, operator: NotIn, values: [todoappreplica, mobappreplica]}
